@@ -1,6 +1,6 @@
 import 'package:blog_explorer/blog_detail.dart';
 import 'package:flutter/material.dart';
-import 'package:share_plus/share_plus.dart';
+
 
 class BlogCard extends StatelessWidget {
   final String? id;
@@ -60,9 +60,7 @@ class BlogCard extends StatelessWidget {
                     Row(
                       children: [
                         Text('ID: $id'),
-                        IconButton(onPressed: ()async{
-                          Share.share(image!);
-                        }, icon:const Icon(Icons.send))
+                       
                       ],
                     ),
                 ],
